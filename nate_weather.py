@@ -6,7 +6,7 @@ import urllib.request
 
 # 날씨의 정보를 크롤링 가져와서 -> 실제 csv 파일에 쓰는 예제.
 
-csvName = '/Users/minkyoungkim/Work Space/BITC/WorkSpace/09-Python/TestPython/ch9_crawling1/sokcho_weather_231216.csv'
+csvName = r'F:\06 - Study\BITC\workspace\09-Python\PythonTest\ch9_crawling1\sokcho_weather_231216.csv'
 with open(csvName, 'w', newline='',encoding="UTF-8") as csvFp:
     csvWriter = csv.writer(csvFp)
     # 첫번째 헤더 부분 , 컬럼.
@@ -19,7 +19,7 @@ while True:
     webPage = htmlObject.read()
     bsObject = bs4.BeautifulSoup(webPage, 'html.parser')
 
-    # 가져올 정보의 태그 트리.
+    # 가져올 정보의 태그 트리. 
     # div : .right_today ->
     tag = bsObject.find('div', {'class': 'right_today'})
     # div : .right_today -> p : .celsius , text 값 가져오기.

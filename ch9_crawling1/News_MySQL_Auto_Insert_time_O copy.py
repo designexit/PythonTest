@@ -109,7 +109,7 @@ def insertData(subject, press, pDate, pTime, link, imgLinkUrl):
 ##
 page = 1
 count = 1
-nateUrl = "https://news.nate.com/recent?cate=its&mid=n0105&type=c&date=20230829&page=1"
+nateUrl = "https://news.nate.com/recent?cate=its&mid=n0105&type=c&date=20231215&page=1"
 while True:
     # if (count != 21):
     try:
