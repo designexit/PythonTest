@@ -6,7 +6,7 @@ import urllib.request
 
 # 날씨의 정보를 크롤링 가져와서 -> 실제 csv 파일에 쓰는 예제.
 
-csvName = '/Users/minkyoungkim/Work Space/BITC/WorkSpace/09-Python/TestPython/ch9_crawling1/sokcho_weather_231208.csv'
+csvName = '/Users/minkyoungkim/Work Space/BITC/WorkSpace/09-Python/TestPython/ch9_crawling1/sokcho_weather_231216.csv'
 with open(csvName, 'w', newline='',encoding="UTF-8") as csvFp:
     csvWriter = csv.writer(csvFp)
     # 첫번째 헤더 부분 , 컬럼.

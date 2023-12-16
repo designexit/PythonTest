@@ -1,7 +1,7 @@
 import bs4
 
 # 초기 세팅
-webPage = open('C:/TestPython/ch9_crawling1/Sample03.html',
+webPage = open('/Users/minkyoungkim/Work Space/BITC/WorkSpace/09-Python/TestPython/ch9_crawling1/Sample03.html',
                'rt', encoding='utf-8').read()
 bsObject = bs4.BeautifulSoup(webPage, 'html.parser')
 
